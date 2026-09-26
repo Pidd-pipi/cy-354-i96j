@@ -1,3 +1,5 @@
+export * from "./lostfound";
+
 export interface FeatureItem {
   id: number;
   title: string;

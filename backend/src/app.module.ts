@@ -2,8 +2,10 @@ import { Module } from "@nestjs/common";
 import { OverviewController } from "./overview/overview.controller";
 import { OverviewService } from "./overview/overview.service";
 import { AppLogger } from "./common/app.logger";
+import { LostFoundModule } from "./lostfound/lostfound.module";
 
 @Module({
+  imports: [LostFoundModule],
   controllers: [OverviewController],
   providers: [OverviewService, AppLogger],
 })
